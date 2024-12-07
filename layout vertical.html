@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        header, nav, section, footer {
+            text-align: center;
+            padding: 20px;
+            flex-shrink: 0;
+        }
+        header {
+            background-color: #87CEEB;
+            height: 15%;
+        }
+        nav {
+            background-color: #AFEEEE;
+            height: 15%;
+        }
+        section {
+            background-color: #4682B4;
+            flex-grow: 1; /* Ocupa o espaço restante */
+        }
+        footer {
+            background-color: #00CED1;
+            height: 15%;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <section>Section</section>
+    <footer>Footer</footer>
+</body>
+</html>

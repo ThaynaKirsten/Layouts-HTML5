@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            background-color: #AFEEEE;
+        }
+        div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .top-left {
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+        .bottom-left {
+            background-color: yellow;
+            bottom: 0;
+            left: 0;
+        }
+        .top-right {
+            background-color: limegreen;
+            top: 0;
+            right: 0;
+        }
+        .bottom-right {
+            background-color: gray;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left"></div>
+    <div class="bottom-left"></div>
+    <div class="top-right"></div>
+    <div class="bottom-right"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #87CEEB;
+            flex-shrink: 0;
+            height: 15%;
+        }
+        main {
+            display: flex;
+            flex-grow: 1; /* Ocupa o espaço restante */
+        }
+        nav {
+            background-color: #4682B4;
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        section {
+            background-color: #5F9EA0;
+            flex-grow: 1; /* Ocupa o espaço restante */
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        footer {
+            background-color: #00CED1;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <nav>Nav</nav>
+        <section>Section</section>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
